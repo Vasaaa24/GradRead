@@ -1,0 +1,220 @@
+.logo {
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+  color: #a1e9ff;
+  font-size: clamp(30px, 5vw, 35px);
+}
+.logoImg {
+  background-image: url(/GradRead.png);
+  background-position: center;
+  background-size: cover;
+  width: calc(3vh + 3vw);
+  height: calc(3vh + 3vw);
+}
+.logoObject {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  justify-content: space-around;
+}
+
+.navbar {
+  z-index: 99;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  justify-content: space-around;
+  background-color: #393e46;
+  min-width: 100%;
+  height: 80px;
+  position: fixed;
+  top: 0;
+}
+
+.navbar ul {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  justify-content: space-between;
+  flex-direction: row;
+  width: 600px;
+}
+
+.navbar li {
+  margin-top: 10px;
+  width: 120px;
+}
+
+.linkPrechod {
+  padding-bottom: 4px;
+  text-decoration: none;
+  color: #eeeeee;
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.linkPrechod:hover {
+  font-size: 17px;
+  border-width: 0px;
+  border-bottom-width: 4px;
+  border-style: solid;
+  border-color: #a1e9ff;
+  transition: 0.2s ease;
+}
+
+.Napsat {
+  border-radius: 10px;
+  width: 100px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #222831b2;
+  color: #eeeeee;
+  font-size: 15px;
+  font-weight: 600;
+}
+
+.Napsat:hover {
+  background-color: #a1e9ff;
+  color: #393e46;
+}
+
+.pozadiBurger {
+  cursor: pointer;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  justify-content: space-around;
+  display: none;
+  width: 50px;
+  height: 50px;
+}
+@media only screen and (max-width: 1100px) {
+  .pozadiBurger {
+    width: 40px;
+    height: 40px;
+    display: flex;
+    margin-right: 5vw;
+  }
+  .Napsat{
+    display: none;
+  }
+  .navbar ul {
+    display: none;
+  }
+  .logo {
+    margin-left: 10vw;
+  }
+  .navbar {
+    justify-content: space-between;
+  }
+}
+@media only screen and (min-width: 1900px) {
+  .logoImg {
+    width: calc(2vh + 2vw);
+    height: calc(2vh + 2vw);
+  }
+}
+.burger {
+  background-color: #a1e9ff;
+  width: 100%;
+  height: 5px;
+  border-radius: 10px;
+  transition: 0.2s ease;
+}
+@keyframes outDropdown {
+  0% {
+    transform: translateX(0px);
+  }
+  100% {
+    transform: translateX(-700px);
+  }
+}
+@keyframes goDropdown {
+  0% {
+    transform: translateX(-700px);
+  }
+  100% {
+    transform: translateX(0px);
+  }
+}
+@keyframes rotateAnimationPrvni {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(45deg) translate(7px, 7px);
+  }
+}
+@keyframes rotateAnimationDruhy {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(-45deg) translate(7px, -7px);
+  }
+}
+
+@keyframes rotateAnimationPrvniZpet {
+  from {
+    transform: rotate(45deg);
+  }
+  to {
+    transform: rotate(0deg) translate(0px, 0px);
+  }
+}
+@keyframes rotateAnimationDruhyZpet {
+  from {
+    transform: rotate(-45deg);
+  }
+  to {
+    transform: rotate(0deg) translate(0px, 0px);
+  }
+}
+.dropdown {
+  z-index: 999;
+  top: 80px;
+  position: fixed;
+  background-color: #000000ad;
+  backdrop-filter: blur(8px);
+  width: 100vw;
+  height: calc(100vh - 80px);
+  display: none;
+  justify-content: center;
+}
+.pozadiDropdown {
+  margin-top: 10%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  justify-content: space-around;
+  width: 90%;
+  height: 75%;
+}
+
+.dropdownLink {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  justify-content: space-around;
+  background-color: rgba(161, 233, 255, 0.795);
+  border-radius: 20px;
+  width: 50%;
+  height: 60px;
+  font-weight: 600;
+  font-size: 15px;
+  color: rgba(255, 255, 255, 0.81);
+  -webkit-box-shadow: 0px 0px 5px 5px rgba(0, 173, 181, 0.35);
+  -moz-box-shadow: 0px 0px 5px 5px rgba(0, 173, 181, 0.35);
+  box-shadow: 0px 0px 5px 5px rgba(0, 173, 181, 0.35);
+}
+
+
+@media only screen and (max-width: 570px) {
+  .dropdownLink {
+    width: 70%;
+    font-size: 19px;
+  }
+}

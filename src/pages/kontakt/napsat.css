@@ -1,0 +1,98 @@
+.okraje{
+    padding:30px;
+}
+.fonNapsat{
+    background-color: #1c787d73;
+    border-radius: 20px;
+    margin: 0 auto;
+    margin-top: 6pc;
+    max-width: 900px;
+    height: 80vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-around;
+    -webkit-box-shadow: 0px 0px 10px 10px rgba(0, 173, 181, 0.35);
+    -moz-box-shadow: 0px 0px 10px 10px rgba(0, 173, 181, 0.35);
+     box-shadow: 0px 0px 10px 10px rgba(0, 173, 181, 0.35);
+
+}
+.mailPokyny{
+    margin-top: 18px;
+    color: white;
+    font-size: clamp(20px ,3vw ,25px);
+    font-weight: 500;
+}
+.zapis{
+    color: rgb(75, 64, 64);
+    border-radius: 10px;
+    padding: 0 10px;
+    font-size: clamp(14px ,3vw ,18px);
+    width: 60%;
+    height: 10%;
+}
+.zprava{
+    color: rgb(75, 64, 64);
+    border-radius: 10px;
+    padding: 10px 10px;
+    width: 60%;
+    height: 30%;
+    overflow: scroll;
+    font-size: clamp(11px ,3vw ,16px);
+}
+.poslat{
+    border-width: 1;
+    border-radius: 10px;
+    background-color: #27c3cb;
+    color:white ;
+    width:20%;
+    height:8%;
+    cursor: pointer;
+    font-weight: 500;
+    font-size: clamp(14px ,3vw ,16px);
+}
+.poslat:hover{
+    background-color: #269197;
+    color:rgb(219, 228, 255) ;
+}
+
+@media only screen and (max-width: 599px) {
+.zapis{
+    width: 80%;
+}
+.zprava{
+    width: 80%;
+}
+.fonNapsat{
+    height: 60vh;;
+}
+.poslat{
+    width:120px;
+    height:40px;
+}
+}
+@media only screen and (max-width: 1199px) {
+}
+
+.Toastify__toast-container {
+    width: 360px;
+    padding: 5px;
+    box-sizing: border-box; 
+}
+
+
+.Toastify__toast-container--bottom-right {
+    bottom: 1em; 
+    right: 1em; 
+}
+
+
+@media (max-width: 768px) {
+    .Toastify__toast-container {
+        width: auto; 
+        right: 10px; 
+        left: 10px;
+        bottom: 10px; 
+    }
+}

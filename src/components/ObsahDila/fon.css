@@ -1,0 +1,69 @@
+.fon {
+  margin: 80px auto;
+  max-width: 85%;
+  height: 1200px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  justify-content: space-around;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+.dev {
+  height: 800px;
+}
+
+.fonUvodu {
+  margin: 0 auto;
+  margin-top: 3pc;
+  width: 80%;
+  height: 600px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  justify-content: space-around;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+@media only screen and (max-width: 915px) {
+  .fonUvodu {
+    height: 700px;
+    width: 85%;
+  }
+}
+@media only screen and (max-width: 700px) {
+  .fonUvodu {
+    height: 600px;
+    width: 85%;
+  }
+}
+@media only screen and (max-width: 500px) {
+  .fonUvodu {
+    height: 550px;
+    width: 85%;
+  }
+}
+@media only screen and (max-width: 1059px) {
+  .osm {
+    height: 2100px;
+  }
+  .dev {
+    height: 1700px;
+  }
+  .dvad {
+    height: 2100px;
+  }
+  .dvadCR {
+    height: 2500px;
+  }
+}
+
+@media only screen and (min-width: 1500px) {
+  .fon {
+    height: 1300px;
+  }
+  .dev {
+    height: 900px;
+  }
+}
